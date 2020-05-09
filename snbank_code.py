@@ -38,7 +38,14 @@ while start:
 
                             print('kindly input the following customer details')
                             account_name = input('Name: ')
-                            account_balance = float(input('Opening Balance: '), 2)
+                            while True:
+                                try:
+                                    account_balance = float(input('Opening Balance: '))
+                                except ValueError:
+                                    print("Please input a valid number")
+                                    continue
+                                else:
+                                    break
                             account_type = input('Account Type: ')
                             email = input('Email: ')
                             account_number = ''.join(random.choice(string.digits) for _ in range(10))
