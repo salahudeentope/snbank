@@ -2,6 +2,8 @@ import random
 import os
 import json
 import string
+import re
+
 
 start = True
 while start:
@@ -48,6 +50,9 @@ while start:
                                     break
                             account_type = input('Account Type: ')
                             email = input('Email: ')
+                            while not bool(re.search(r"^[\w\.\+\-]+\@[\w]+\.[a-z]{2,3}$", email)):
+                                email = input("Please input a valid email: ")
+                                continue
                             account_number = ''.join(random.choice(string.digits) for _ in range(10))
 
                             customer_details = {
