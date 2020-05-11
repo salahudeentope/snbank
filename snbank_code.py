@@ -19,6 +19,7 @@ while start:
         with open('staff.txt') as staff:
             staff_details = json.load(staff)
             for employee in staff_details:
+			            	
                 if employee['username'] == employee_username and employee['password'] == employee_password:
                     session_created = open('session.txt', 'w')
                     session_created.write(employee_username)
@@ -81,7 +82,9 @@ while start:
                             os.remove("session.txt")
                             print(f"\nThank you {employee_username} you've been successfully signed out.")
                             logged_in = False
-
+            else:
+                print ("\nPlease input a valid log in detail\n")
+					
     else:
         print("\nThank you for choosing to work at Our-People bank")
         start = False
