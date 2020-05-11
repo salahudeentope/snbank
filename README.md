@@ -1,23 +1,25 @@
 # snbank
-Teo files are created and stored in the project folder, staff.The staff details should be the following:
+Two files should be created and stored in the project folder, staff.txt and customer.txt.
+The staff.txt should contain the details of staff of Our-People Bank Plc. 
+
+The staff details should be the following:
 Username
 Password
 Email
 Full Name
-the customer.txt should be empty
-Implement the following:
+However, customer.txt should be empty as it'll be used to store the details of customers created by the staff. 
 
-On run, the program should present the following options:
+On run, the program will present the following options:
 
 1 Staff Login
 
 2 Close App
 
-If the user selects Login, the user should be asked for their username and password, the program should check the pre-defined staff in a file called staff.txt and verify that the username and password are correct. If incorrect, user should see an error message and told to try again. 
+If the the staff member selects Login, they will be asked for their username and password, the program will check the pre-defined staff in a file called staff.txt and verify that the username and password are correct. If incorrect, they will see an error message and told to try again.
+If the staff selects  close app, the program will end and close. 
 
-After user login is successful, a new file should be created to store the user session.
 
-After login, staff should be presented with the following options: 
+After the login, the staff will be presented with the following options: 
 
 1 Create new bank account
 
@@ -25,9 +27,9 @@ After login, staff should be presented with the following options:
 
 3 Logout
 
-If staff selects Create bank account, 
+If the staff selects Create bank account, 
 
-staff should be made to supply the following
+The staff will be asked to supply the following for the customer. 
 
 Account name
 
@@ -37,12 +39,12 @@ Account Type
 
 Account email
 
-The details above should be saved in the customer.txt file, before saving, generate a 10 digits account number for the customer.
+After supplying the details, a 10-digit account number will be generated and displayed for the customer. 
 
-After staff completes creating the account, they should see the account number, and then presented with the options in (4) above.
+The details above and the account number will then be stored in the customer.txt file.
 
-If Staff selects check account details from (4) above, the program should request for account number
+The options will be presented again and if the Staff selects check account details, the program will request for account number then the program will fetch the details of the account from the customer.txt file and display it to the staff. 
 
-The program should fetch the details of the account from the customer.txt file and display it to the staff, then present back the options in (4) above.
+If the staff selects logout, they will be returned to the staff login page.
 
-If staff selects logout in (4) above, delete the user session file and return the user back to the staff login page.
+
