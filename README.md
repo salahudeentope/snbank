@@ -1,8 +1,5 @@
 # snbank
-Create a file in your project called staff.txt
-Create a file in your project called customer.txt
-The staff.txt should contain 2 staff details
-The staff details should be the following:
+Teo files are created and stored in the project folder, staff.The staff details should be the following:
 Username
 Password
 Email
